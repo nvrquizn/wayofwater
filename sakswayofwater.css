@@ -213,6 +213,23 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 }
 
 /* ============================= */
+/* 🌊 CAVE / PANEL STYLE SHIFT */
+/* ============================= */
+
+.cave-grid,
+.mound-grid {
+    background: rgba(7, 26, 36, 0.65) !important;
+    box-shadow:
+        inset 0 0 25px rgba(79,214,194,0.08),
+        0 0 10px rgba(0,0,0,0.4) !important;
+    border-radius: 12px !important;
+    text-shadow: 1px 1px 1.5px #021016;
+    max-height: 175px;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+/* ============================= */
 /* 🌊 MOUNDS */
 /* ============================= */
 
