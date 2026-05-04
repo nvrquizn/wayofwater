@@ -1,0 +1,969 @@
+/* ========================================================= */
+/* 🌊 Sak (#327675)'s Den CSS - Way of Water Theme           */
+/* 🐚 Bioluminescent Ocean Night / Avatar-inspired aesthetic */
+/* ========================================================= */
+
+/*
+READ ME:
+- This CSS is themed for a calm bioluminescent ocean style.
+- Colors are soft blues, deep sea greens, and glowing aqua accents.
+- Do NOT redistribute without credit. 
+- You may make minor changes as long as you message me first, however you cannot remove my credit or edit this heavily
+- Designed for readability + immersive den styling.
+- Thank you so much for choosing my CSS, I hope you enjoy!
+*/
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');
+
+:root {
+  /* Ocean Night Palette */
+  --kolur1: #6fe7ff;     /* glowing aqua */
+  --kolur170: #6fe7ffb0; 
+
+  --kolur2: #4fd6c2;     /* bioluminescent teal */
+  --kolur270: #4fd6c2b0;
+
+  --kolur3: #071a24;     /* deep ocean night */
+  --kolur370: #071a24c7;
+
+  --kolur350: #0b2430d9; /* deep sea glass */
+
+  --kolur4: #123a4a;     /* dark water */
+  --kolur470: #123a4ac7;
+
+  --kolur5: #a6fff2;     /* bright glow highlight */
+  --kolur6: #0d2b38;     /* shadowed ocean */
+  --kolur7: #7df0ff;     /* inner glow cyan */
+
+  --kolur760: #4fd6c240;
+  --kolur780: #6fe7ff40;
+
+  --darkgray: #061017;
+  --lightwhite: #e6fbffcc;
+  --white: #ffffff;
+}
+
+/* ============================= */
+/* 🌊 BACKGROUND */
+/* ============================= */
+
+@media screen and (max-width: 800px){
+  body {
+    background: url('https://i.ibb.co/4g12TDKM/Screenshot-2026-05-04-at-05-09-45.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+    color: var(--kolur1) !important;
+  }
+}
+
+@media screen and (min-width: 801px){
+  body {
+    background: url('https://i.ibb.co/4g12TDKM/Screenshot-2026-05-04-at-05-09-45.png') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+    font-size: 18px !important;
+    color: var(--kolur1) !important;
+  } 
+}
+
+/* Blue Whale Cursor */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/blue-whale-9e9a3210-32.webp') 32 32, auto !important;
+}
+
+/* ============================= */
+/* 🌊 CHAT (OCEAN BIOLUMINESCENT) */
+/* ============================= */
+
+#chatMessageList .s-chat-message:nth-child(even) {
+    background: rgba(7, 26, 36, 0.95) !important;
+    color: #d6fbff !important;
+}
+
+#chatMessageList .s-chat-message:nth-child(odd) {
+    background: rgba(11, 36, 48, 0.85) !important;
+    color: #d6fbff !important;
+}
+
+.s-chat-message__pinned {
+    background: linear-gradient(
+        90deg,
+        rgba(7,26,36,0.95),
+        rgba(79,214,194,0.15)
+    ) !important;
+
+    color: #d6fbff !important;
+    box-shadow: 0 0 12px rgba(111,231,255,0.25);
+}
+
+.s-chat-message_timestamp {
+    color: #7df0ff !important;
+}
+
+div#chatMessageContainer {
+    border: none !important;
+}
+
+button#label_currentChannel {
+    background: linear-gradient(90deg, #071a24, #4fd6c2) !important;
+    color: #e6fbff !important;
+}
+
+/* ============================= */
+/* 🐚 LOGO REPLACER */
+/* ============================= */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('https://i.ibb.co/PvydYKS8/avatar2logo-20260504060011.png');
+    width: 230px !important;
+    height: 120px !important;
+    object-fit: contain !important;
+}
+
+/* ============================= */
+/* 🌊 CAVE IMAGE THEMING */
+/* ============================= */
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+    content: url('https://i.ibb.co/Y7kVHdDC/Screenshot-2026-05-04-at-05-25-20.png') !important;
+    opacity: 0.75;
+    height: 150px;
+    width: 250px;
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px rgba(111,231,255,0.25)!important;
+}
+
+div.cave-grid>img[src$="prideoverview.png"]:hover {
+    content: url('https://i.ibb.co/Y7kVHdDC/Screenshot-2026-05-04-at-05-25-20.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 1;
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+    content: url('https://i.ibb.co/h1Kbs39h/Screenshot-2026-05-04-at-05-26-12.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 0.75;
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px rgba(79,214,194,0.25) !important;
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"]:hover {
+    content: url('https://i.ibb.co/h1Kbs39h/Screenshot-2026-05-04-at-05-26-12.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 1;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+    content: url('https://i.ibb.co/HTJ4NW1x/Screenshot-2026-05-04-at-05-20-11.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 0.75;
+    border-radius: 10px !important;
+    box-shadow: 0 0 12px rgba(111,231,255,0.25) !important;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"]:hover {
+    content: url('https://i.ibb.co/HTJ4NW1x/Screenshot-2026-05-04-at-05-20-11.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 1;
+}
+
+div.cave-grid>img {
+    content: url('https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 0.75;
+    border-radius: 10px !important;
+    box-shadow: 0 0 12px rgba(111,231,255,0.25) !important;
+}
+
+div.cave-grid>img:hover {
+    content: url('https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 1;
+}
+
+/* smooth transitions */
+a[href^="cave.php?id="] .cave-grid > img {
+    transition: 0.3s ease;
+}
+
+a[href^="cave.php?id="] .cave-grid > img:hover {
+    filter: brightness(1.1) contrast(1.05);
+}
+
+/* ============================= */
+/* 🐋 FEATURED LIONESS */
+/* ============================= */
+
+.lionImage img:first-child {
+    visibility: hidden;
+}
+
+.lionImage {
+    background: url('https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png') no-repeat !important;
+    background-size: cover;
+    box-shadow: 0 0 18px rgba(111,231,255,0.15);
+}
+
+/* ============================= */
+/* 🌊 CAVE / PANEL STYLE SHIFT */
+/* ============================= */
+
+.cave-grid,
+.mound-grid {
+    background: rgba(7, 26, 36, 0.65) !important;
+    box-shadow:
+        inset 0 0 25px rgba(79,214,194,0.08),
+        0 0 10px rgba(0,0,0,0.4) !important;
+    border-radius: 12px !important;
+    text-shadow: 1px 1px 1.5px #021016;
+    max-height: 175px;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+/* ============================= */
+/* 🌊 MOUNDS */
+/* ============================= */
+
+.mound-grid img {
+    background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat !important;
+    opacity: 0.75;
+    border-radius: 10px !important;
+}
+
+.mound-grid img:hover {
+    background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat !important;
+    opacity: 1;
+    transition: 0.8s !important;
+}
+
+/* ============================= */
+/* 🌊 LINKS */
+/* ============================= */
+
+a:link,
+a:visited {
+  color: var(--kolur1) !important;
+  transition: 0.5s !important;
+  text-shadow: 0 0 6px rgba(111,231,255,0.15);
+}
+
+a:hover {
+  color: var(--kolur5) !important;
+}
+
+/* ============================= */
+/* 🌊 CLEAN GLOW TOUCH */
+/* ============================= */
+
+h1, h2, h3 {
+    text-shadow: 0 0 10px rgba(111,231,255,0.15);
+}
+
+/* ============================= */
+/* 🌊 LION + USER AVATAR */
+/* ============================= */
+
+div#lion_image {
+	opacity: .85;
+	box-shadow: 0 0 12px rgba(0, 255, 200, 0.25) !important;
+	border-radius: 6% !important;
+	overflow: hidden;
+	margin-top: 19px;
+	margin-left: 6px;
+	transition: .6s ease;
+}
+
+div#lion_image:hover {
+	opacity: 1;
+	box-shadow: 0 0 18px rgba(0, 255, 220, 0.45) !important;
+	transition: .6s ease;
+}
+
+table#player img {
+	opacity: 0.85;
+	box-shadow: 0 0 10px rgba(0, 200, 255, 0.2) !important;
+	border-radius: 8px;
+}
+
+table#player img:hover {
+	opacity: 1;
+	box-shadow: 0 0 16px rgba(0, 255, 255, 0.35) !important;
+	transition: .6s ease;
+}
+
+/* ============================= */
+/* 🌌 NAVBAR */
+/* ============================= */
+
+.navbar {
+	background: #0b1b24; /* deep ocean night */
+	border-bottom: 0px ridge !important;
+	border-radius: 10px;
+	box-shadow: inset 0 -40px 60px rgba(0, 180, 200, 0.15),
+	            0 0 8px rgba(0, 255, 220, 0.15) !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 18px !important;
+	color: #66f2ff !important; /* bioluminescent cyan */
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	background: #102a36;
+	color: #a8fff7 !important;
+	text-shadow: 0 0 6px rgba(0, 255, 255, 0.5);
+	border-radius: 18px;
+	box-shadow: inset 0 0 18px rgba(0, 255, 220, 0.25);
+	transition: 0.7s !important;
+}
+
+/* ============================= */
+/* 🌊 MAIN PANEL */
+/* ============================= */
+
+.container.main {
+	background: rgba(10, 18, 26, 0.92) !important;
+	border-left: 0px ridge;
+	border-right: 0px ridge;
+	border-bottom: 0px ridge;
+	border-radius: 10px;
+	box-shadow: inset 0 0 90px rgba(0, 180, 200, 0.12),
+	            0 0 8px rgba(0, 255, 220, 0.08) !important;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+/* ============================= */
+/* 🌊 LEFT PANEL */
+/* ============================= */
+
+.col-md-9 {
+	background: none;
+	border-right: none;
+	color: #d6ffff !important;
+}
+
+/* ============================= */
+/* 🌊 BREADCRUMB */
+/* ============================= */
+
+.breadcrumb {
+	background: #0d2029 !important;
+	border: 0px ridge !important;
+	border-radius: 5px;
+	box-shadow: inset 0 0 18px rgba(0, 255, 220, 0.12),
+	            0 0 6px rgba(0, 200, 255, 0.1) !important;
+}
+
+.breadcrumb .active {
+	color: #66f2ff;
+	font-size: 18px !important;
+}
+
+/* ============================= */
+/* 🌊 BUTTONS */
+/* ============================= */
+
+input.floatright {
+	background: rgba(0, 180, 200, 0.15) !important;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: #a8fff7 !important;
+	text-shadow: 0 0 4px rgba(0, 255, 255, 0.2) !important;
+	box-shadow: inset 0 0 18px rgba(0, 255, 220, 0.2),
+	            0 0 6px rgba(0, 200, 255, 0.1) !important;
+}
+
+input.floatright:hover {
+	background: rgba(0, 255, 220, 0.18) !important;
+	box-shadow: inset 0 0 22px rgba(0, 255, 255, 0.3),
+	            0 0 10px rgba(0, 255, 255, 0.2) !important;
+	transition: .7s !important;
+}
+
+button.button {
+	background: #0b1b24;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: #66f2ff;
+	font-size: 18px !important;
+	text-shadow: 0 0 4px rgba(0, 255, 255, 0.2);
+	box-shadow: inset 0 0 18px rgba(0, 180, 200, 0.15),
+	            0 0 6px rgba(0, 255, 220, 0.1) !important;
+}
+
+button.button:hover {
+	background: #102a36;
+	color: #a8fff7;
+	box-shadow: inset 0 0 24px rgba(0, 255, 255, 0.25),
+	            0 0 12px rgba(0, 255, 220, 0.2) !important;
+	transition: .7s !important;
+}
+
+/* ============================= */
+/* 🌊 COMMENT BOX */
+/* ============================= */
+
+#commentBox {
+	background: rgba(0, 180, 200, 0.08) !important;
+	box-shadow: inset 0 0 18px rgba(0, 255, 220, 0.15),
+	            0 0 6px rgba(0, 200, 255, 0.1) !important;
+	border: none !important;
+}
+
+::placeholder {
+	color: #66f2ff !important;
+}
+
+div.comment {
+	background: rgba(0, 120, 140, 0.25);
+	box-shadow: inset 0 0 18px rgba(0, 255, 220, 0.15),
+	            0 0 6px rgba(0, 200, 255, 0.1) !important;
+	font-weight: bold;
+	color: #e6ffff;
+}
+
+input#comment {
+	background: rgba(0, 200, 220, 0.15) !important;
+	color: #0b1b24 !important;
+	border-radius: 10px !important;
+}
+
+small.text-muted {
+	color: #b8f7ff;
+}
+
+small.text-muted a {
+	color: #66f2ff;
+}
+
+input[type="button"].bad {
+	background: #00bcd4 !important;
+	border-radius: 10px !important;
+	color: #001a1f !important;
+}
+
+/* 🔥 GENERAL ALERT (neutral notices) */
+.alert {
+	background: #0b1b1f; /* deep ocean base */
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #6fffe9 !important; /* bioluminescent teal */
+	box-shadow: #2ee6c866 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+}
+
+/* ⚠️ WARNING ALERT */
+.alert-warning{
+	background: #0f2a2f; /* dark seaweed tone */
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #7ef9ff !important; /* glowing cyan */
+	box-shadow: #2ee6ff66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+}
+
+/* ❗ DANGER ALERT */
+.alert-danger {
+	background: #062025 !important; /* deep abyss teal */
+	text-align: center;
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #b8fff5 !important; /* pale glow */
+	box-shadow: #00ffd566 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+}
+
+/* 🜂 SIDE BOXES / FEATURE PANELS */
+.feature,
+div.left {
+	background: #081a1f !important; /* ocean trench */
+	box-shadow: #00ffd555 0px -80px 36px -28px inset, 1px 1px 5px #000 !important;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border: none!important;
+	color: #6fffe9 !important;
+}
+
+/* 🧱 MAIN PANELS */
+.panel {
+	background: #071418 !important;
+	border: 0px ridge !important;
+	border-radius: 10px;
+	color:#d6fffb !important;
+	box-shadow: #00c2ff55 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+}
+
+/* 🔤 TEXT INSIDE BARS */
+.progress div {
+	color: #e6ffff !important;
+	font-size: 13px !important;
+	text-shadow: 1px 1px 1px #000 !important;
+}
+
+/* 🪨 BAR BACKGROUND */
+.progress {
+	background: linear-gradient(#06151a, #0b2a2f);
+	box-shadow:1px 1px 5px #000 !important;
+	border-radius: 20px;
+}
+
+/* 💧 ENERGY BAR */
+.progress-bar-warning {
+   background: linear-gradient(#00ffd5, #00aaff)!important;
+}
+
+/* 🌊 HUNGER BAR */
+.progress-bar-danger {
+    background: linear-gradient(#00aaff, #00ffd5)!important;
+}
+
+/* ✨ XP BAR */
+.progress-bar-success {
+    background: linear-gradient(#6fffe9, #00c2ff)!important;
+}
+
+/* 📊 GENERAL BAR STYLE */
+.progress-bar {
+    background: linear-gradient(#00ffd5, #00c2ff);
+	border-radius: 20px;
+	box-shadow:1px 1px 5px #000 !important;
+}
+
+/* 🏆 ACHIEVEMENT BAR */
+div:nth-child(2)>div>div>div.progress-bar.progress-bar-success {
+	background: linear-gradient(#00ffd5, #00aaff)!important;
+}
+
+/* 📈 ACCOUNT STANDING */
+th > div > div.progress-bar.progress-bar-success {
+    background: linear-gradient(#00ffd5, #00c2ff)!important;
+}
+
+/* 🌊 MAIN HEADER */
+h1 {
+	color: #6fffe9;
+	font-size: 72px;
+	font-family: 'IM Fell Double Pica SC', serif;
+	text-align: center;
+	text-shadow: 0 0 12px #00ffd5;
+}
+
+/* 🌊 SUB HEADER */
+h2 {
+	color: #7ef9ff;
+	font-size: 56px;
+	text-align: center;
+	text-shadow: 0 0 10px #00c2ff;
+}
+
+/* 🌊 SMALL HEADER */
+h3 {
+	color: #b8fff5 !important;
+	font-size: 22px !important;
+}
+
+/* ✨ HOVER EFFECT */
+h3:hover {
+	color: #00ffd5 !important;
+	transition: .7s!important;
+}
+
+/* 🪵 MAIN LION INFO TABLE (container) */
+.table {
+	background: #07141a; /* deep ocean panel base */
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 0 0 8px #00ffd533;
+}
+
+.table a:link,
+.table a:visited {
+	color: #6fffe9 !important; /* bioluminescent teal */
+	transition: 0.5s!important;
+}
+
+.table a:active {
+	color: #00ffd5 !important; /* bright glow hit */
+	transition: 0.5s!important;
+}
+
+.table a:hover {
+	color: #7ef9ff !important;
+	transform: scale(1.05);
+	transition: 0.7s!important;
+}
+
+/* 🌊 HEADER ROWS */
+.top,
+.bottom,
+th {
+	background: #0a1f24 !important; /* deep sea glass */
+	box-shadow: 0 0 12px #00ffd533 inset, 1px 1px 5px #000 !important;
+	color: #7ef9ff !important; /* glowing cyan text */
+	font-size: 18px !important;
+	border-radius: 10px;
+}
+
+.table .left {
+	background: #0b252b !important; /* darker ocean edge */
+	box-shadow: 0 0 10px #00ffd522 inset !important;
+	border-radius: 10px;
+}
+
+input,
+select,
+textarea {
+	background: #07141a !important;
+	border: 0px ridge !important;
+	box-shadow: 0 0 10px #00c2ff33 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	color: #b8fff5 !important;
+	text-shadow: 1px 1px 2px #000 !important;
+}
+
+.inner-table .left {
+	background: #0d2b31 !important;
+	color: #6fffe9 !important;
+	box-shadow: 0 0 10px #00ffd522 inset, 1px 1px 5px #000 !important;
+}
+
+.inner-table .right {
+	background: #07141a !important;
+	box-shadow: 0 0 12px #00aaff33 inset, 1px 1px 5px #000 !important;
+	color: #7ef9ff !important;
+	border-radius: 10px;
+}
+
+.right_odd {
+	background: #061216 !important;
+	box-shadow: 0 0 10px #00ffd522 inset !important;
+}
+
+.item-header {
+	background: #0a1f24 !important;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #00ffd533 inset !important;
+	color: #6fffe9 !important;
+	font-size: 15px !important;
+}
+
+.item {
+	background: #07141a !important;
+	box-shadow: 0 0 12px #00c2ff33 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	border: 0px ridge !important;
+}
+
+.item-footer {
+	background: #061216;
+}
+
+/* 🌊 SLIDER */
+div.slider.round {
+	background: #00ffd5 !important; /* bioluminescent core */
+}
+
+div.slider.round::before {
+	background: #7ef9ff !important; /* glowing orb */
+}
+
+/* 🧊 BOX CONTAINERS */
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+/* 🌌 BOXES */
+.Box1,
+.Box2 {
+	float: left;
+	background: linear-gradient(180deg, #07141a, #061216);
+	color: #b8fff5;
+	padding: 15px;
+	border: 0px ridge !important;
+	box-shadow: 0 0 20px #00ffd51a inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	margin: 5px;
+	height: 300px;
+	width: 350px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	transition: 1s;
+}
+
+.Box1:hover,
+.Box2:hover {
+	overflow-y: auto;
+}
+
+/* 🌊 SCROLLBAR */
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background: #061216;
+	box-shadow: 0 0 10px #00c2ff22 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #00ffd5;
+	box-shadow: 0 0 12px #00ffd533 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+}
+
+/* 📱 MOBILE OVERRIDE */
+@media only screen and (max-width: 767px) {
+    .container.main .hidden-xs {
+        display: block !important;
+    }
+}
+
+/* 🌊 DYNASTY LIST */
+.row.dynastycollection .dynastylist .left {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+/* hide original images cleanly */
+.row.dynastycollection .dynastylist img {
+	opacity: 0 !important;
+	width: 100% !important;
+	height: auto !important;
+}
+
+/* shared background behavior */
+.row.dynastycollection .dynastylist .left {
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	transition: 0.8s ease;
+	box-shadow: 1px 1px 5px var(--darkgray);
+}
+
+/* 🌌 1. King Dynasty */
+.row.dynastycollection .dynastylist:nth-child(1) .left {
+	background-image: url("https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png");
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 🌙 2. Pride Dynasty */
+.row.dynastycollection .dynastylist:nth-child(2) .left {
+	background-image: url("https://i.ibb.co/V0MrmGZy/Screenshot-2026-05-04-at-05-41-50.png");
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ✨ 3. Achievements */
+.row.dynastycollection .dynastylist:nth-child(3) .left {
+	background-image: url("https://i.ibb.co/vCnZg9vK/Screenshot-2026-05-04-at-05-43-20.png");
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 🌊 4. Showcase */
+.row.dynastycollection .dynastylist:nth-child(4) .left {
+	background-image: url("https://i.ibb.co/DgwcCcJg/Screenshot-2026-05-04-at-05-43-35.png");
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 🪲 5. Beetle Book */
+.row.dynastycollection .dynastylist:nth-child(5) .left {
+	background-image: url("https://i.ibb.co/cK5cjgqy/Screenshot-2026-05-04-at-05-41-05.png");
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ✨ hover glow effect (bioluminescent ocean vibe) */
+.row.dynastycollection .dynastylist .left:hover {
+	transform: scale(1.03);
+	box-shadow:
+		0 0 10px #4df6ff55,
+		0 0 20px #2bd3ff33,
+		1px 1px 5px var(--darkgray);
+	filter: brightness(1.15) saturate(1.2);
+}
+
+/* 🌊 BACKGROUND TABLE (ocean base) */
+.table {
+	background: #061418; /* abyss base */
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 0 0 10px #00ffd522;
+}
+
+.table a:link {
+	color: #6fffe9 !important; /* bioluminescent teal */
+	transition: 0.5s!important;
+}
+
+.table a:visited {
+	color: #6fffe9 !important;
+	transition: 0.5s!important;
+}
+
+.table a:active {
+	color: #00ffd5 !important; /* bright pulse */
+	transition: 0.5s!important;
+} 
+
+.table a:hover {
+	color: #7ef9ff !important;
+	-webkit-transform: scale(1.1);
+	transition: 0.7s!important;
+}
+
+/* 🌊 BIOLUMINESCENT PARTICLES (fireflies → ocean glow orbs) */
+.firefly::before {
+    background: #00ffd5; /* cyan glow */
+    opacity: 0.35;
+    animation: drift ease alternate infinite;
+}
+
+.firefly::after {
+    background: #7ef9ff; /* electric blue glow */
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw #00ffd5;
+    animation: drift ease alternate infinite, flash ease infinite;
+}
+
+/* 🌊 MOVEMENT SET 12 */
+.firefly:nth-child(12) {
+  animation-name: move12;
+}
+.firefly:nth-child(12)::before {
+  animation-duration: 17s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 17s, 8765ms;
+  animation-delay: 0ms, 4321ms;
+}
+
+@keyframes move12 {
+  0% { transform: translateX(10vw) translateY(-10vh) scale(0.5); }
+  25% { transform: translateX(-30vw) translateY(20vh) scale(0.7); }
+  50% { transform: translateX(20vw) translateY(30vh) scale(0.85); }
+  75% { transform: translateX(-15vw) translateY(-25vh) scale(0.6); }
+  100% { transform: translateX(0vw) translateY(0vh) scale(0.6); }
+}
+
+.firefly:nth-child(12) {
+  animation-name: move12;
+}
+.firefly:nth-child(12)::before {
+  animation-duration: 15s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 15s, 8700ms;
+  animation-delay: 0ms, 2600ms;
+}
+
+/* 🌊 MOVEMENT SET 13 */
+.firefly:nth-child(13) {
+  animation-name: move13;
+}
+.firefly:nth-child(13)::before {
+  animation-duration: 12s;
+}
+.firefly:nth-child(13)::after {
+  animation-duration: 12s, 9600ms;
+  animation-delay: 0ms, 1950ms;
+}
+
+@keyframes move13 {
+  0% { transform: translateX(22vw) translateY(23vh) scale(0.44); }
+  25% { transform: translateX(-42vw) translateY(36vh) scale(0.77); }
+  50% { transform: translateX(10vw) translateY(-20vh) scale(0.9); }
+  75% { transform: translateX(-36vw) translateY(-9vh) scale(0.6); }
+  100% { transform: translateX(15vw) translateY(25vh) scale(0.53); }
+}
+
+/* 🌊 MOVEMENT SET 14 */
+.firefly:nth-child(14) {
+  animation-name: move14;
+}
+.firefly:nth-child(14)::before {
+  animation-duration: 16s;
+}
+.firefly:nth-child(14)::after {
+  animation-duration: 16s, 9500ms;
+  animation-delay: 0ms, 8300ms;
+}
+
+@keyframes move14 {
+  0% { transform: translateX(15vw) translateY(-28vh) scale(0.80); }
+  25% { transform: translateX(-47vw) translateY(-10vh) scale(0.93); }
+  50% { transform: translateX(16vw) translateY(-9vh) scale(0.68); }
+  75% { transform: translateX(-23vw) translateY(34vh) scale(0.60); }
+  100% { transform: translateX(0vw) translateY(0vh) scale(0.55); }
+}
+
+/* 🌊 MOVEMENT SET 15 */
+.firefly:nth-child(15) {
+  animation-name: move15;
+}
+.firefly:nth-child(15)::before {
+  animation-duration: 17s;
+}
+.firefly:nth-child(15)::after {
+  animation-duration: 17s, 6300ms;
+  animation-delay: 0ms, 8450ms;
+}
+
+@keyframes move15 {
+  0% { transform: translateX(-7vw) translateY(-24vh) scale(0.78); }
+  25% { transform: translateX(45vw) translateY(-16vh) scale(0.64); }
+  50% { transform: translateX(-27vw) translateY(36vh) scale(0.81); }
+  75% { transform: translateX(31vw) translateY(29vh) scale(0.57); }
+  100% { transform: translateX(18vw) translateY(47vh) scale(1); }
+}
+
+/* 🌊 SHARED MOTION EFFECT */
+@keyframes drift {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 🌊 BIO-LIGHT FLASH */
+@keyframes flash {
+  0%, 30%, 100% { opacity: 0; box-shadow: 0 0 0vw 0vw #00ffd5; }
+  3%, 7% { opacity: 0.7; box-shadow: 0 0 1.5vw 0.3vw #00ffd5; }
+  5% { opacity: 1; box-shadow: 0 0 2vw 0.4vw #7ef9ff; }
+}
