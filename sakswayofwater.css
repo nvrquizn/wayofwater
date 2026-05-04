@@ -952,14 +952,12 @@ div.left img {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    overflow: hidden;
     display: flex;
-    justify-content: space-between;
     gap: 10px;
 }
 
 /* ============================= */
-/* 🔥 BOX (ALL SAME SIZE) */
+/* 🌊 BOX (OCEAN THEME) */
 /* ============================= */
 .box {
     flex: 1;
@@ -967,35 +965,38 @@ div.left img {
 
     background: linear-gradient(
         180deg,
-        rgba(43,43,47,0.95),   /* ash */
-        rgba(18,18,18,0.95)    /* deep charcoal */
+        rgba(6, 20, 28, 0.95),   /* deep ocean */
+        rgba(3, 12, 18, 0.95)    /* abyss */
     ) !important;
 
-    color: #fff4e6;
+    color: #dffcff;
     padding: 12px;
 
-    border: 1px solid rgba(255,122,58,0.35);
-    border-radius: 10px;
+    border: 1px solid rgba(0,255,213,0.25);
+    border-radius: 12px;
 
     box-shadow:
         0 0 18px rgba(0,0,0,0.7),
-        inset 0 0 25px rgba(255,122,58,0.08);
+        inset 0 0 25px rgba(0,255,213,0.08),
+        0 0 8px rgba(0,255,213,0.15);
 
     box-sizing: border-box;
     overflow-y: auto;
 
-    transition: all 0.3s ease;
+    transition: all 0.35s ease;
 }
 
 /* ============================= */
-/* ✨ HOVER */
+/* ✨ BIOLUMINESCENT HOVER */
 /* ============================= */
 .box:hover {
     transform: translateY(-4px);
 
     box-shadow:
-        0 0 25px rgba(255,122,58,0.35),
-        inset 0 0 30px rgba(255,122,58,0.18);
+        0 0 25px rgba(0,255,213,0.35),
+        inset 0 0 35px rgba(111,231,255,0.18);
+
+    border-color: rgba(111,231,255,0.45);
 }
 
 /* ============================= */
@@ -1005,20 +1006,42 @@ div.left img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
+
+    box-shadow: 0 0 10px rgba(0,255,213,0.15);
 }
 
 /* ============================= */
-/* 🔤 OPTIONAL HEADINGS */
+/* 🔤 HEADINGS */
 /* ============================= */
 .box h3 {
-    color: #ff9a5a;
+    color: #6fffe9; /* bioluminescent teal */
     text-align: center;
     margin-bottom: 6px;
     font-size: 18px;
+
+    text-shadow: 0 0 8px rgba(0,255,213,0.5);
 }
 
 /* ============================= */
-/* 📱 MOBILE FIX */
+/* 📜 SCROLLBAR (matches your theme) */
+/* ============================= */
+.box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box::-webkit-scrollbar-track {
+    background: rgba(3,12,18,0.9);
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: linear-gradient(#00ffd5, #6fffe9);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,255,213,0.4);
+}
+
+/* ============================= */
+/* 📱 MOBILE */
 /* ============================= */
 @media (max-width: 767px) {
     .boxcontainer {
@@ -1026,7 +1049,6 @@ div.left img {
     }
 
     .box {
-        width: 100%;
         height: auto;
     }
 }
