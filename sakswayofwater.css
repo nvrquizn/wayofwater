@@ -217,7 +217,7 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* ============================= */
 
 /* hide original images cleanly */
-div.mound-grid > img {
+.mound-grid > img {
     opacity: 0 !important;
 }
 
@@ -240,17 +240,21 @@ div.mound-grid > img {
 }
 
 /* create mound */
-div.mound-grid > img[src$="addbeetlemound.png"] {
+.mound-grid > img {
     content: url("https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png") !important;
+	width: 0; 
+	height: 0; 
+	padding-top: 80px; 
+	padding-right: 130px; 
+	max-height: 150px; 
+	border-radius: 10px !important;
     opacity: 0.75;
-    width: 100%;
-    height: auto;
-    border-radius: 10px !important;
 }
 
 /* hover */
-div.mound-grid > img[src$="addbeetlemound.png"]:hover {
+.mound-grid > img:hover {
     opacity: 1;
+	transition: 0.8s !important;
 }
 
 /* ============================= */
