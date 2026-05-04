@@ -217,7 +217,8 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* ============================= */
 
 /* Cave and mound background colors */ 
-.cave-grid, .mound-grid { 
+.cave-grid, 
+.mound-grid { 
 	background: var(--kolur7) !important; 
 	box-shadow: var(--kolur3) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important; 
 	border-radius: 12px !important; 
@@ -230,11 +231,12 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* beetle mound */
 .mound-grid > img {
     background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat !important;
-	width: 0; 
-	height: 0; 
-	padding-top: 80px; 
-	padding-right: 130px; 
+	width: 250px; 
+	height: 150px; 
+	padding-top: 10px; 
+	padding-right: 15px; 
 	max-height: 150px; 
+	max-width: 250px;
 	border-radius: 10px !important;
     opacity: 0.75;
 }
@@ -248,11 +250,12 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* create mound */
 .mound-grid > img {
     background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') !important;
-	width: 0; 
-	height: 0; 
-	padding-top: 80px; 
-	padding-right: 130px; 
+	width: 250px; 
+	height: 150px; 
+	padding-top: 10px; 
+	padding-right: 15px; 
 	max-height: 150px; 
+	max-width: 250px;
 	border-radius: 10px !important;
     opacity: 0.75;
 }
