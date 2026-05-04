@@ -764,6 +764,7 @@ div.slider.round::before {
 div.left img {
     content: url('https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png') no-repeat center !important;
     object-fit: cover !important;
+}
 
 /* ✨ hover glow effect (bioluminescent ocean vibe) */
 .row.dynastycollection .dynastylist .left:hover {
