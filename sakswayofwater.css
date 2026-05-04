@@ -867,6 +867,17 @@ div.slider.round::before {
     }
 }
 
+/* CREDITS (DO NOT REMOVE) */ 
+.breadcrumb::after { 
+	content: "CSS by Sak#327675"; 
+	color: var(--kolur1); 
+	text-shadow: 1px 1px 1.5px var(--darkgray); 
+	font-size: 17px !important; 
+	position: absolute; 
+	right: 13%; 
+	z-index: 100 
+}
+
 /* 🌊 DYNASTY LIST */
 .dynastylist .left {
 	position: relative;
