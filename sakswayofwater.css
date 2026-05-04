@@ -164,13 +164,16 @@ div.cave-grid > img[src$="nestingbanner.png"] {
     content: url('https://i.ibb.co/HTJ4NW1x/Screenshot-2026-05-04-at-05-20-11.png') !important;
 }
 
-/* 🌊 fallback ONLY for untouched cave images */
-div.cave-grid > img[src]:not([src$="prideoverviewbanner.png"]):not([src$="unsortedlionsbanner.png"]):not([src$="nestingbanner.png"]) {
+/* fallback (must stay LAST so it doesn't override others) */
+div.cave-grid > img:not([src$="prideoverviewbanner.png"])
+:not([src$="unsortedlionsbanner.png"])
+:not([src$="nestingbanner.png"]) {
+    content: url('https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png') !important;
     opacity: 0.75;
     height: 150px;
     width: 250px;
     border-radius: 10px !important;
-    box-shadow: 0 0 12px rgba(111,231,255,0.25) !important;
+    display: block;
 }
 
 /* ============================= */
@@ -727,6 +730,7 @@ div.slider.round::before {
 	box-shadow: 1px 1px 5px var(--darkgray);
 	width: 100px;
 	height: 100px;
+	display: block;
 }
 
 /* hide original images cleanly */
@@ -735,6 +739,12 @@ div.slider.round::before {
 	width: 100% !important;
 	height: 100% !important;
 	object-fit: cover;
+	display: block;
+}
+
+/* ensure anchor doesn't collapse layout */
+.row.dynastycollection .dynastylist a {
+	display: block;
 }
 
 /* shared behavior fix (prevents weird stretching / override conflicts) */
