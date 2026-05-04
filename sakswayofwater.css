@@ -217,7 +217,7 @@ div.mound-grid > img {
 }
 
 /* beetle mound */
-div.mound-grid > img[src$="beetlemound.png"] {
+.mound-grid > img {
     content: url("https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png") !important;
     opacity: 0.75;
     width: 100%;
@@ -226,7 +226,7 @@ div.mound-grid > img[src$="beetlemound.png"] {
 }
 
 /* hover */
-div.mound-grid > img[src$="beetlemound.png"]:hover {
+.mound-grid > img:hover {
     opacity: 1;
 }
 
