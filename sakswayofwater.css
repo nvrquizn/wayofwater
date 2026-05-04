@@ -154,6 +154,7 @@ div.cave-grid > img[src$="prideoverviewbanner.png"] {
 /* hover version (same image, just opacity handled by base hover) */
 div.cave-grid > img[src$="prideoverview.png"]:hover {
     content: url('https://i.ibb.co/Y7kVHdDC/Screenshot-2026-05-04-at-05-25-20.png') !important;
+	transition: 0.8s !important;
 }
 
 /* unsorted lions */
@@ -164,6 +165,7 @@ div.cave-grid > img[src$="unsortedlionsbanner.png"] {
 /* unsorted lions */
 div.cave-grid > img[src$="unsortedlionsbanner.png"]:hover {
     content: url('https://i.ibb.co/h1Kbs39h/Screenshot-2026-05-04-at-05-26-12.png') !important;
+	transition: 0.8s !important;
 }
 
 /* nesting */
@@ -174,6 +176,7 @@ div.cave-grid > img[src$="nestingbanner.png"] {
 /* nesting */
 div.cave-grid > img[src$="nestingbanner.png"]:hover {
     content: url('https://i.ibb.co/HTJ4NW1x/Screenshot-2026-05-04-at-05-20-11.png') !important;
+	transition: 0.8s !important;
 }
 
 /* regular caves */
@@ -183,6 +186,7 @@ div.cave-grid > img[src$="cavedefault.jpg"] {
 
 div.cave-grid > img[src$="cavedefault.jpg"]:hover {
     content: url("https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png") !important;
+	transition: 0.8s !important;
 }
 
 div.cave-grid > img[src$="caveunused.jpg"] {
@@ -191,6 +195,7 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 
 div.cave-grid > img[src$="caveunused.jpg"]:hover {
     content: url("https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png") !important;
+	transition: 0.8s !important;
 }
 
 /* ============================= */
@@ -218,7 +223,7 @@ div.mound-grid > img {
 
 /* beetle mound */
 .mound-grid > img {
-    content: url("https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png") !important;
+    background: url("https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png") no-repeat !important;
     opacity: 0.75;
     width: 100%;
     height: auto;
@@ -228,6 +233,7 @@ div.mound-grid > img {
 /* hover */
 .mound-grid > img:hover {
     opacity: 1;
+	transition: 0.8s !important;
 }
 
 /* create mound */
