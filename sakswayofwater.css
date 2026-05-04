@@ -216,61 +216,28 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* 🌊 MOUNDS */
 /* ============================= */
 
-/* 🪲 hide original mound image ONLY */
-.mound-grid > img {
-    opacity: 0 !important;
-}
-
-/* Cave and mound background colors */ 
-.cave-grid, 
-.mound-grid { 
-	background: var(--kolur7) !important; 
-	box-shadow: var(--kolur3) 0px -50px 36px -28px inset, 1px 1px 5px var(--darkgray) !important; 
-	border-radius: 12px !important; 
-	text-shadow: 1px 1px 1.5px var(--darkgray); 
-	max-height: 150px; 
-	max-width: 250px; 
-	overflow: hidden;
-}
-
 /* beetle mound */
-.mound-grid img {
-    background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat !important;
-	background-size: cover !important;
-	width: 250px; 
-	height: 150px; 
-	padding-top: 40px; 
-	padding-right: 100px;
-	max-height: 150px; 
-	max-width: 250px;
-	border-radius: 10px !important;
+.mound-grid img[src$="beetlemound.png"],
+.mound-grid img[src$="addbeetlemound.png"] {
+    background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat center !important;
+
+    width: 0 !important;
+    height: 0 !important;
+
+    padding-top: 150px;   /* height */
+    padding-right: 250px; /* width */
+
+    border-radius: 10px !important;
     opacity: 0.75;
+
+    box-shadow: 1px 1px 5px var(--darkgray)!important;
+    transition: 0.8s !important;
 }
 
 /* hover */
-.mound-grid img:hover {
+.mound-grid img[src$="beetlemound.png"]:hover,
+.mound-grid img[src$="addbeetlemound.png"]:hover {
     opacity: 1;
-	transition: 0.8s !important;
-}
-
-/* create mound */
-.mound-grid img {
-    background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') !important;
-    background-size: cover !important;
-	width: 250px; 
-	height: 150px; 
-	padding-top: 40px; 
-	padding-right: 100px;
-	max-height: 150px; 
-	max-width: 250px;
-	border-radius: 10px !important;
-    opacity: 0.75;
-}
-
-/* hover */
-.mound-grid img:hover {
-    opacity: 1;
-	transition: 0.8s !important;
 }
 
 /* ============================= */
