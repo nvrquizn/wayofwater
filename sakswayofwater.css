@@ -770,33 +770,33 @@ div.slider.round::before {
 }
 
 /* 🌌 1. King Dynasty */
-.row.dynastycollection img[src$="den_ancestors.png"] {
-    background: url('https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png') no-repeat center !important;
-    background-size: cover !important;
+.div.left img[src*="den_ancestors.png"] {
+    content: url('https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png') no-repeat center !important;
+    object-fit: cover !important;
 }
 
 /* 🌙 2. Pride Dynasty */
-.row.dynastycollection img[src$="den_ancestorsfem.png"] {
-    background: url('https://i.ibb.co/V0MrmGZy/Screenshot-2026-05-04-at-05-41-50.png') no-repeat center !important;
-    background-size: cover !important;
+.div.left img[src*="den_ancestorsfem.png"] {
+    content: url('https://i.ibb.co/V0MrmGZy/Screenshot-2026-05-04-at-05-41-50.png') no-repeat center !important;
+    object-fit: cover !important;
 }
 
 /* ✨ 3. Achievements */
-.row.dynastycollection img[src$="den_achievements.png"] {
-    background: url('https://i.ibb.co/vCnZg9vK/Screenshot-2026-05-04-at-05-43-20.png') no-repeat center !important;
-	background-size: cover !important;
+.div.left img[src*="den_achievements.png"] {
+    content: url('https://i.ibb.co/vCnZg9vK/Screenshot-2026-05-04-at-05-43-20.png') no-repeat center !important;
+	object-fit: cover !important;
 }
 
 /* 🌊 4. Showcase */
-.row.dynastycollection img[src$="den_showcase.png"] {
-    background: url('https://i.ibb.co/DgwcCcJg/Screenshot-2026-05-04-at-05-43-35.png') no-repeat center !important;
-    background-size: cover !important;
+.div.left img[src*="den_showcase.png"] {
+    content: url('https://i.ibb.co/DgwcCcJg/Screenshot-2026-05-04-at-05-43-35.png') no-repeat center !important;
+    object-fit: cover !important;
 }
 
 /* 🪲 5. Beetle Book */
-.row.dynastycollection img[src$="den_beetlebook.png"] {
-    background: url('https://i.ibb.co/cK5cjgqy/Screenshot-2026-05-04-at-05-41-05.png') no-repeat center !important;
-    background-size: cover !important;
+.div.left img[src*="den_beetlebook.png"] {
+    content: url('https://i.ibb.co/cK5cjgqy/Screenshot-2026-05-04-at-05-41-05.png') no-repeat center !important;
+    object-fit: cover !important;
 }
 
 /* ✨ hover glow effect (bioluminescent ocean vibe) */
