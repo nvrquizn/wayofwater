@@ -224,10 +224,13 @@ div.mound-grid > img {
 /* beetle mound */
 .mound-grid > img {
     background: url("https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png") no-repeat !important;
+	width: 0; 
+	height: 0; 
+	padding-top: 80px; 
+	padding-right: 130px; 
+	max-height: 150px; 
+	border-radius: 10px !important;
     opacity: 0.75;
-    width: 100%;
-    height: auto;
-    border-radius: 10px !important;
 }
 
 /* hover */
