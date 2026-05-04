@@ -117,7 +117,7 @@ button#label_currentChannel {
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     content: url('https://i.ibb.co/PvydYKS8/avatar2logo-20260504060011.png');
-    width: 260px !important;
+    width: 250px !important;
     height: 150px !important;
     object-fit: contain !important;
 }
@@ -164,11 +164,13 @@ div.cave-grid > img[src$="nestingbanner.png"] {
     content: url('https://i.ibb.co/HTJ4NW1x/Screenshot-2026-05-04-at-05-20-11.png') !important;
 }
 
-/* fallback (must stay LAST so it doesn't override others) */
-div.cave-grid > img:not([src$="prideoverviewbanner.png"])
-:not([src$="unsortedlionsbanner.png"])
-:not([src$="nestingbanner.png"]) {
-    content: url('https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png') !important;
+/* 🌊 fallback ONLY for untouched cave images */
+div.cave-grid > img[src]:not([src$="prideoverviewbanner.png"]):not([src$="unsortedlionsbanner.png"]):not([src$="nestingbanner.png"]) {
+    opacity: 0.75;
+    height: 150px;
+    width: 250px;
+    border-radius: 10px !important;
+    box-shadow: 0 0 12px rgba(111,231,255,0.25) !important;
 }
 
 /* ============================= */
@@ -733,6 +735,11 @@ div.slider.round::before {
 	width: 100% !important;
 	height: 100% !important;
 	object-fit: cover;
+}
+
+/* shared behavior fix (prevents weird stretching / override conflicts) */
+.row.dynastycollection .dynastylist .left {
+	display: block;
 }
 
 /* 🌌 1. King Dynasty */
