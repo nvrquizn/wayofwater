@@ -750,15 +750,6 @@ div.slider.round::before {
 	display: block;
 }
 
-/* hide original images cleanly */
-.row.dynastycollection .dynastylist img {
-	opacity: 0 !important;
-	width: 100% !important;
-	height: 100% !important;
-	object-fit: cover;
-	display: block;
-}
-
 /* ensure anchor doesn't collapse layout */
 .row.dynastycollection .dynastylist a {
 	display: block;
