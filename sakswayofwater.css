@@ -736,7 +736,7 @@ div.slider.round::before {
 }
 
 /* 🌊 DYNASTY LIST */
-.row.dynastycollection .dynastylist .left {
+.dynastylist .left {
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
@@ -751,19 +751,25 @@ div.slider.round::before {
 }
 
 /* ensure anchor doesn't collapse layout */
-.row.dynastycollection .dynastylist a {
+.dynastylist a {
 	display: block;
 }
 
 /* shared behavior fix (prevents weird stretching / override conflicts) */
-.row.dynastycollection .dynastylist .left {
+.dynastylist .left {
 	display: block;
 }
 
 /* 🌌 Dynasty */
 div.left img {
-    content: url('https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png') no-repeat center !important;
-    object-fit: cover !important;
+    content: url('https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png') !important;
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+    height: 200px;
+    max-width: 200px !important;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
 
 /* ✨ hover glow effect (bioluminescent ocean vibe) */
