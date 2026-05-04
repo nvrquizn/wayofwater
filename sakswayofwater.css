@@ -216,11 +216,6 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* 🌊 MOUNDS */
 /* ============================= */
 
-/* hide original images cleanly */
-.mound-grid > img {
-    opacity: 0 !important;
-}
-
 /* Cave and mound background colors */ 
 .cave-grid, 
 .mound-grid { 
@@ -236,6 +231,7 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* beetle mound */
 .mound-grid img {
     background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat !important;
+	background-size: cover !important;
 	width: 250px; 
 	height: 150px; 
 	padding-top: 40px; 
@@ -255,6 +251,7 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* create mound */
 .mound-grid img {
     background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') !important;
+    background-size: cover !important;
 	width: 250px; 
 	height: 150px; 
 	padding-top: 40px; 
