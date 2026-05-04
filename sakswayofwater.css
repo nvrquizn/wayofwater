@@ -761,31 +761,31 @@ div.slider.round::before {
 }
 
 /* 🌌 1. King Dynasty */
-div.left img[src*="den_ancestors.png"] {
+div.left img[src*="denancestors.png"] {
     content: url('https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png') no-repeat center !important;
     object-fit: cover !important;
 }
 
 /* 🌙 2. Pride Dynasty */
-div.left img[src*="den_ancestorsfem.png"] {
+div.left img[src*="denancestorsfem.png"] {
     content: url('https://i.ibb.co/V0MrmGZy/Screenshot-2026-05-04-at-05-41-50.png') no-repeat center !important;
     object-fit: cover !important;
 }
 
 /* ✨ 3. Achievements */
-div.left img[src*="den_achievements.png"] {
+div.left img[src*="denachievements.png"] {
     content: url('https://i.ibb.co/vCnZg9vK/Screenshot-2026-05-04-at-05-43-20.png') no-repeat center !important;
 	object-fit: cover !important;
 }
 
 /* 🌊 4. Showcase */
-div.left img[src*="den_showcase.png"] {
+div.left img[src*="denshowcase.png"] {
     content: url('https://i.ibb.co/DgwcCcJg/Screenshot-2026-05-04-at-05-43-35.png') no-repeat center !important;
     object-fit: cover !important;
 }
 
 /* 🪲 5. Beetle Book */
-div.left img[src*="den_beetlebook.png"] {
+div.left img[src*="denbeetlebook.png"] {
     content: url('https://i.ibb.co/cK5cjgqy/Screenshot-2026-05-04-at-05-41-05.png') no-repeat center !important;
     object-fit: cover !important;
 }
