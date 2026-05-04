@@ -123,6 +123,121 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 }
 
 /* ============================= */
+/* 🌊 TOPBAR (WELCOME + LINKS) */
+/* ============================= */
+
+.container.topbar {
+    background: linear-gradient(
+        180deg,
+        rgba(6, 20, 28, 0.95),
+        rgba(4, 14, 20, 0.95)
+    ) !important;
+
+    border-radius: 12px !important;
+
+    box-shadow:
+        inset 0 0 25px rgba(79,214,194,0.08),
+        0 0 12px rgba(0,255,213,0.15),
+        1px 1px 5px var(--darkgray) !important;
+
+    padding: 10px 15px !important;
+    backdrop-filter: blur(6px);
+}
+
+/* 🌊 "Welcome back" text */
+.welcomeback {
+    color: #7ef9ff !important;
+    font-size: 16px;
+    text-shadow: 0 0 6px rgba(111,231,255,0.4);
+}
+
+/* username link */
+.welcomeback a {
+    color: #00ffd5 !important;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0,255,213,0.6);
+    transition: 0.5s;
+}
+
+.welcomeback a:hover {
+    color: #7ef9ff !important;
+    text-shadow: 0 0 12px rgba(111,231,255,0.8);
+}
+
+/* ============================= */
+/* 🌊 TOP LINKS */
+/* ============================= */
+
+.toplinks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* links */
+.toplinks li a {
+    color: #6fffe9 !important;
+    font-size: 15px;
+    text-decoration: none;
+
+    padding: 4px 10px;
+    border-radius: 8px;
+
+    transition: 0.4s ease;
+}
+
+/* hover glow */
+.toplinks li a:hover {
+    color: #7ef9ff !important;
+
+    background: rgba(0,255,213,0.08);
+    box-shadow: 0 0 10px rgba(0,255,213,0.2);
+
+    text-shadow: 0 0 6px rgba(111,231,255,0.6);
+}
+
+/* ============================= */
+/* 🪲 ICONS (silver / gold beetles) */
+/* ============================= */
+
+.toplinks img.icon {
+    filter:
+        drop-shadow(0 0 4px rgba(0,255,213,0.4))
+        brightness(1.1);
+
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover img.icon {
+    filter:
+        drop-shadow(0 0 8px rgba(111,231,255,0.7))
+        brightness(1.2);
+}
+
+/* ============================= */
+/* ✨ CURRENCY NUMBERS */
+/* ============================= */
+
+#silverBeetlesAmt,
+#goldBeetlesAmt {
+    color: #00ffd5 !important;
+    text-shadow: 0 0 6px rgba(0,255,213,0.6);
+}
+
+/* ============================= */
+/* 🌊 LOGOUT (slightly distinct) */
+/* ============================= */
+
+.toplinks li a[href*="logout"] {
+    color: #7ef9ff !important;
+}
+
+.toplinks li a[href*="logout"]:hover {
+    background: rgba(111,231,255,0.1);
+    box-shadow: 0 0 12px rgba(111,231,255,0.25);
+}
+
+/* ============================= */
 /* 🌊 CAVE IMAGE THEMING */
 /* ============================= */
 
