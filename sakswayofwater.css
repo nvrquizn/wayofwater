@@ -216,6 +216,11 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* 🌊 MOUNDS */
 /* ============================= */
 
+/* hide original images cleanly */
+.mound-grid > img {
+    opacity: 0 !important;
+}
+
 /* Cave and mound background colors */ 
 .cave-grid, 
 .mound-grid { 
