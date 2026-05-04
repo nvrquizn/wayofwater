@@ -128,6 +128,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 /* base cave image styling (DO NOT override specific banners) */
 div.cave-grid > img {
+	content: url('https://i.ibb.co/Y7kVHdDC/Screenshot-2026-05-04-at-05-25-20.png') !important;
     height: 150px;
     width: 250px;
     opacity: 0.75;
@@ -138,6 +139,7 @@ div.cave-grid > img {
 
 /* hover base */
 div.cave-grid > img:hover {
+    content: url('https://i.ibb.co/Y7kVHdDC/Screenshot-2026-05-04-at-05-25-20.png') !important;
     opacity: 1;
     filter: brightness(1.1) contrast(1.05);
 }
@@ -159,9 +161,36 @@ div.cave-grid > img[src$="unsortedlionsbanner.png"] {
     content: url('https://i.ibb.co/h1Kbs39h/Screenshot-2026-05-04-at-05-26-12.png') !important;
 }
 
+/* unsorted lions */
+div.cave-grid > img[src$="unsortedlionsbanner.png"]:hover {
+    content: url('https://i.ibb.co/h1Kbs39h/Screenshot-2026-05-04-at-05-26-12.png') !important;
+}
+
 /* nesting */
 div.cave-grid > img[src$="nestingbanner.png"] {
     content: url('https://i.ibb.co/HTJ4NW1x/Screenshot-2026-05-04-at-05-20-11.png') !important;
+}
+
+/* nesting */
+div.cave-grid > img[src$="nestingbanner.png"]:hover {
+    content: url('https://i.ibb.co/HTJ4NW1x/Screenshot-2026-05-04-at-05-20-11.png') !important;
+}
+
+/* regular caves */
+div.cave-grid > img[src$="cavedefault.jpg"] {
+    content: url("https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png") !important;
+}
+
+div.cave-grid > img[src$="cavedefault.jpg"]:hover {
+    content: url("https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png") !important;
+}
+
+div.cave-grid > img[src$="caveunused.jpg"] {
+    content: url("https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png") !important;
+}
+
+div.cave-grid > img[src$="caveunused.jpg"]:hover {
+    content: url("https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png") !important;
 }
 
 /* ============================= */
@@ -183,12 +212,12 @@ div.cave-grid > img[src$="nestingbanner.png"] {
 /* ============================= */
 
 /* hide original images cleanly */
-.mound-grid > img {
+div.mound-grid > img {
     opacity: 0 !important;
 }
 
 /* beetle mound */
-.mound-grid > img[src$="beetlemound.png"] {
+div.mound-grid > img[src$="beetlemound.png"] {
     content: url("https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png") !important;
     opacity: 0.75;
     width: 100%;
@@ -197,12 +226,12 @@ div.cave-grid > img[src$="nestingbanner.png"] {
 }
 
 /* hover */
-.mound-grid > img[src$="beetlemound.png"]:hover {
+div.mound-grid > img[src$="beetlemound.png"]:hover {
     opacity: 1;
 }
 
 /* create mound */
-.mound-grid > img[src$="addbeetlemound.png"] {
+div.mound-grid > img[src$="addbeetlemound.png"] {
     content: url("https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png") !important;
     opacity: 0.75;
     width: 100%;
@@ -211,7 +240,7 @@ div.cave-grid > img[src$="nestingbanner.png"] {
 }
 
 /* hover */
-.mound-grid > img[src$="addbeetlemound.png"]:hover {
+div.mound-grid > img[src$="addbeetlemound.png"]:hover {
     opacity: 1;
 }
 
