@@ -349,8 +349,7 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* ============================= */
 
 /* beetle mound */
-.mound-grid img[src$="beetlemound.png"],
-.mound-grid img[src$="addbeetlemound.png"] {
+.mound-grid img {
     background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat center !important;
 
     width: 0 !important;
@@ -367,8 +366,7 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 }
 
 /* hover */
-.mound-grid img[src$="beetlemound.png"]:hover,
-.mound-grid img[src$="addbeetlemound.png"]:hover {
+.mound-grid img:hover {
     opacity: 1;
 }
 
