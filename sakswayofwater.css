@@ -745,7 +745,7 @@ div.slider.round::before {
 	background-repeat: no-repeat !important;
 	transition: 0.8s ease;
 	box-shadow: 1px 1px 5px var(--darkgray);
-	width: 170px;
+	width: 200px;
 	height: 150px;
 	display: block;
 }
@@ -763,7 +763,7 @@ div.slider.round::before {
 /* 🌌 Dynasty */
 div.left img {
     content: url('https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png') !important;
-    object-fit: fit;
+    object-fit: cover;
     object-position: top;
     padding: 0;
     height: 130px;
