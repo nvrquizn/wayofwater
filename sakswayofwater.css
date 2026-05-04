@@ -164,10 +164,8 @@ div.cave-grid > img[src$="nestingbanner.png"] {
     content: url('https://i.ibb.co/HTJ4NW1x/Screenshot-2026-05-04-at-05-20-11.png') !important;
 }
 
-/* fallback (must stay LAST so it doesn't override others) */
-div.cave-grid > img:not([src$="prideoverviewbanner.png"])
-:not([src$="unsortedlionsbanner.png"])
-:not([src$="nestingbanner.png"]) {
+/* regular cave */
+div.cave-grid {
     content: url('https://i.ibb.co/s9CqYjbH/Screenshot-2026-05-04-at-05-26-59.png') !important;
     opacity: 0.75;
     height: 150px;
@@ -211,13 +209,13 @@ div.cave-grid > img:not([src$="prideoverviewbanner.png"])
 /* 🌊 MOUNDS */
 /* ============================= */
 
-.mound-grid img {
+.mound-grid > img[src$="beetlemound.png"] {
     background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat !important;
     opacity: 0.75;
     border-radius: 10px !important;
 }
 
-.mound-grid img:hover {
+.mound-grid > img[src$="beetlemound.png"]:hover {
     background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat !important;
     opacity: 1;
     transition: 0.8s !important;
@@ -753,28 +751,28 @@ div.slider.round::before {
 }
 
 /* 🌌 1. King Dynasty */
-.row.dynastycollection .dynastylist:nth-child(1) .left {
-	background-image: url("https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png");
+.row.dynastycollection img[src$="den_ancestors.png"] {
+    content: url("https://i.ibb.co/N2XcX0yQ/Screenshot-2026-05-04-at-05-42-32.png") !important;
 }
 
 /* 🌙 2. Pride Dynasty */
-.row.dynastycollection .dynastylist:nth-child(2) .left {
-	background-image: url("https://i.ibb.co/V0MrmGZy/Screenshot-2026-05-04-at-05-41-50.png");
+.row.dynastycollection img[src$="den_ancestorsfem.png"] {
+    content: url("https://i.ibb.co/V0MrmGZy/Screenshot-2026-05-04-at-05-41-50.png") !important;
 }
 
 /* ✨ 3. Achievements */
-.row.dynastycollection .dynastylist:nth-child(3) .left {
-	background-image: url("https://i.ibb.co/vCnZg9vK/Screenshot-2026-05-04-at-05-43-20.png");
+.row.dynastycollection img[src$="den_achievements.png"] {
+    content: url("https://i.ibb.co/vCnZg9vK/Screenshot-2026-05-04-at-05-43-20.png") !important;
 }
 
 /* 🌊 4. Showcase */
-.row.dynastycollection .dynastylist:nth-child(4) .left {
-	background-image: url("https://i.ibb.co/DgwcCcJg/Screenshot-2026-05-04-at-05-43-35.png");
+.row.dynastycollection img[src$="den_showcase.png"] {
+    content: url("https://i.ibb.co/DgwcCcJg/Screenshot-2026-05-04-at-05-43-35.png") !important;
 }
 
 /* 🪲 5. Beetle Book */
-.row.dynastycollection .dynastylist:nth-child(5) .left {
-	background-image: url("https://i.ibb.co/cK5cjgqy/Screenshot-2026-05-04-at-05-41-05.png");
+.row.dynastycollection img[src$="den_beetlebook.png"] {
+    content: url("https://i.ibb.co/cK5cjgqy/Screenshot-2026-05-04-at-05-41-05.png") !important;
 }
 
 /* ✨ hover glow effect (bioluminescent ocean vibe) */
