@@ -745,8 +745,8 @@ div.slider.round::before {
 	background-repeat: no-repeat !important;
 	transition: 0.8s ease;
 	box-shadow: 1px 1px 5px var(--darkgray);
-	width: 130px;
-	height: 130px;
+	width: 150px;
+	height: 150px;
 	display: block;
 }
 
