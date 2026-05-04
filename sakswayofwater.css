@@ -227,11 +227,6 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 	overflow: hidden;
 }
 
-/* hide original images cleanly */
-.mound-grid > img {
-    opacity: 0 !important;
-}
-
 /* beetle mound */
 .mound-grid > img {
     background: url('https://i.ibb.co/FLshbf23/Screenshot-2026-05-04-at-05-29-01.png') no-repeat !important;
